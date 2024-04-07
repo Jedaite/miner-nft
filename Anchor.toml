@@ -1,0 +1,16 @@
+[features]
+seeds = false
+skip-lint = false
+
+[programs.devnet]
+miner_nft = "7wcU8nW59nzPh869kJvaCML5kFiWTC4HAvAiFHxufhB"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "devnet"
+wallet = "~/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
