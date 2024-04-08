@@ -3,7 +3,7 @@ seeds = false
 skip-lint = false
 
 [programs.devnet]
-miner_nft = "7wcU8nW59nzPh869kJvaCML5kFiWTC4HAvAiFHxufhB"
+miner_nft = "8nTbwrZLubbwc63VcZvPh6hKKSS8RoJGdmVVStvnceFH"
 
 [registry]
 url = "https://api.apr.dev"
@@ -14,3 +14,4 @@ wallet = "~/.config/solana/id.json"
 
 [scripts]
 test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
+initialize = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 scripts/initialize.ts"

@@ -18,7 +18,7 @@ use crate::state::*;
 pub mod errors;
 use crate::errors::*;
 
-declare_id!("7wcU8nW59nzPh869kJvaCML5kFiWTC4HAvAiFHxufhB");
+declare_id!("8nTbwrZLubbwc63VcZvPh6hKKSS8RoJGdmVVStvnceFH");
 #[program]
 pub mod miner_nft {
 

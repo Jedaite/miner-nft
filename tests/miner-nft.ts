@@ -11,9 +11,11 @@ describe("miner-nft", async () => {
   // Configured the client to use the devnet cluster.
   const provider = anchor.AnchorProvider.env();
   anchor.setProvider(provider);
+
   const program = anchor.workspace.MinerNft as Program<MinerNft>;
 
-  const signer = provider.wallet; // wallet addr user PK
+  // Anchor.toml: wallet = "~/.config/solana/id.json"
+  const signer = provider.wallet;
 
   const mint = anchor.web3.Keypair.generate();
 
